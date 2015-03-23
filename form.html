@@ -1,10 +1,20 @@
-﻿<h1>課程表單</h1>
+﻿<!DOCTYPE html>
+<html>‬
+<head>‬
+<meta charset="utf-8">
+<linkrel="stylesheet" type="text/css">
+<title> 課程表單</title>
+</head>‬
+
+
+<body>
+<h1>課程表單</h1>
 <p>
 <label for="name">姓名</label><br>
 <input type="text" name="n" id="name">
 </p>
-<p>性別</p>
-<ul>
+<p><label for="gender">性別</label></p>
+<ul type="none">
 <li>
 <input type="radio" name="fm" id="boy" value="g1">
 <label for="boy">男</label>
@@ -18,8 +28,8 @@
 <label for="department">科系</label><br>
 <input type="text" name="d" id="department">
 </p>
-<p>年級</p>
-<ul>
+<p><label for="grade">年級</label></p>
+<ul type="none">
 <li>
 <input type="radio" name="grade" id="freshman" value="1">
 <label for="freshman">一</label>
@@ -50,4 +60,6 @@
 <input type="text" name="mail" id="email">
 </p>
 <br>
-<input type="submit" value="送出">
+<input type="submit" class="button" value="送出">
+</body>
+</html>

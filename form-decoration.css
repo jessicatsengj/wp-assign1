@@ -1,0 +1,21 @@
+﻿body{     
+background:url(http://subtlepatterns.com/patterns/paisley.png);
+
+}
+.button{
+background: #eee;
+border: solid 1px #bebebe;
+color: #333;
+}
+.button:hover{
+background: #ccff33;
+}
+.button:active{
+background:#ffff00;
+}
+label:hover{
+background: #ccff33;
+}
+label:active{
+background:#ffff00;
+}
