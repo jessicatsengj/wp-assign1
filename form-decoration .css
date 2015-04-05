@@ -1,5 +1,6 @@
 ﻿body{     
 background:url(http://subtlepatterns.com/patterns/paisley.png);
+background-attachment: fixed;
 margin: 40px;
 width:50%
 border: #000 3px solid;
