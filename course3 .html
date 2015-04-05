@@ -1,22 +1,34 @@
 ﻿<!DOCTYPE html>
-
 <html>‬
 <head>‬
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="http://jessicatsengj.github.io/wp-assign1/course-decoration.css">
 <title> web程式設計教學大綱</title>
+<link rel="stylesheet" type="text/css" href="file:///Users/jessica/Documents/我的文件/數位內容/程式設計/web%20programming/assign1/course-decoration%20.css">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </head>‬
 <body>‬
-<header>‬
-<nav>‬
-<ul>‬
-<li><a href="http://jessicatsengj.github.io/wp-assign1/form.html">填寫課程表單</a></li>‬
-</header>‬
-<header >
-<h1>web程式設計教學大綱</h1>
+<header class="row">
+  <div class=col-sm-5><h1>web程式設計教學大綱</h1></div>
+</header>
+   
+<nav class="row">
+      <ul class="nav nav-pills">
+  <li class="navigation-item"><a href="#">課程資訊</a></li>
+  <li class="navigation-item"><a href="#">教師介紹</a></li>
+  <li class="navigation-item"><a href="#">課程投影片</a></li>
+  <li class="navigation-item"><a href="#">作業繳交</a></li>
+  <li class="navigation-item"><a href="http://jessicatsengj.github.io/wp-assign1/form.html">填寫課程表單</a></li>
+  </ul>
+  </nav>
+  
+  
+  
 <div class='decorate'>     
           <div class="box" >
-              
+            <div class="flexbox flexbox-orient-vertical" id="main">
+    
               <span class="topic"> 學年學期</span>
               <span class="content">103學年度第2學期
               </span>‬       
@@ -44,20 +56,22 @@
               <span class="topic">修別 </span>
               <span class="content"> 群修</span>‬
              
+              </div>
            </div>
-           </div>
-</header>‬
-
-<div class="intro-second">‬
+  </div>
+<div class="row">
+  <article id="content1" class="col-sm-6">
 <h2>課程目標</h2>
 
 <p>本課程旨在介紹WWW的基本運作原理並以其為平台開發應用程式，包含HTML5/CSS3動態網頁製作、網頁物件模型(DOM)、JavaScript程式設計與雲端應用等。</p>‬
-‬
+‬   </article>
+  <article id="content2" class="col-sm-6">
 <h2>課程大綱</h2>‬
 <p>本課程涵蓋網路平台之最新技術如HTML5, CSS3, Javascript, JSON, JQuery等，並介紹國內外網站及網路行銷活動範例，培養學生網頁應用程式之開發能力及資訊架構設計能力，最後能設計兼具功能與美感的動態網站。</p>‬
-
+   </article>
+  <div class="col-sm-6">‬ 
 <h2>上課進度</h2>‬
-<ol>‬
+<ol class="labels-list">‬ 
 <li>Course Introduction / Git 
 <li>HTML5 
 <li>CSS3 (I) 
@@ -77,28 +91,31 @@
 <li>Google Analytics 
 <li>Final demo‬
 </ol>‬
-
+</div>
+  
+  <article id="content3" class="col-sm-6">
 <h2>教學方式</h2>‬
 <p>課堂教授、作品展示、工具教學、個案討論、作業練習、期末分組展示。</p>‬
-
+</article>
+    <article id="content4" class="col-sm-6">
 <h2>教學助理工作項目</h2>‬
 <p>批改考卷及平時作業評量</p>‬
-
+</article>
+  <article id="content5" class="col-sm-6">
 <h2>課程要求/評分標準</h2>‬
 <p>課堂作業(35%) 、期中作業(20%)及期末實作成品成果展示(30%)</p>‬
-
+</article>
+  <article id="content2" class="col-sm-6">
 <h2>參考書目</h2>‬
 <ul>‬
 <li>Eric Freeman, Elisabeth Robson(2011), Head First HTML5 Programming: Building Web Apps with JavaScript, O'Reilly ‬
 <li>Crockford Douglas, JavaScript: The Good Parts, O'Reilly‬
 </ul>‬
 <br>‬
-</div>‬
+    </article>
+    </div>
+
 ‬
 </body>‬
 ‬
 </html>
-
-
-
-

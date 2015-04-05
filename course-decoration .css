@@ -1,31 +1,77 @@
-﻿.decorate{
-  background: url(http://www.dotcorner.com/wp-content/rockettheme/rt_modulus_wp/frontpage/web-development.png)
+﻿body{
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  border: 3px solid;
 }
 
+/*.decorate{
+  background: url(http://www.dotcorner.com/wp-content/rockettheme/rt_modulus_wp/frontpage/web-development.png)  no-repeat;
+}*/
 
 h1{
-  font-size:50pt;
-  text-align:center; 
+  font-size:3em;
   color:#fff;
   font-family:'Freckle Face',cursive;
   font-weight:bolder;
-  text-shadow:
-    0 0 20px #000,
-    0 0 55px #000099,
-    0 0 70px #330000,
-    0 0 80px #66FFFF;
- /* border: 6px solid ;
-  border-color:#999999;
-  background: url(http://pic.putaojiayuan.com/uploadfile/tuku/HuanCaiSeJiBiZhi/12190520529242.jpg)*/
+  text-shadow: 0 0 5px #000;
+  margin-top:40px;
 }
+header{
+  background-color:#696969;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid;
+}
+nav {
+  padding: 5px;
+  background: #d0d0d0; 
+  border-radius: 10px;
+  border: 2px solid;
+  
+}
+
+nav a {
+  color: #000000;
+  font-size: 1.2em;
+  text-decoration: none;
+    
+}
+.flexbox {
+  background: rgba(255,255,255,.5);
+  border: 2px solid #696969;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  display: -webkit-box;
+  font-family: sans-serif;
+  width: 80%;
+  margin: auto ;
+  margin-top: 2em;
+}
+.flexbox-orient-vertical {
+  -webkit-box-orient: vertical;
+ padding:15px;
+}
+
 .topic{
   display:inline-block;
-  width:100px;
-  padding: 5px;
+  background: #696969;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #fff;
+  width:80px;
+  padding: 3px;
+  margin:2px;
+  font-size: 16px;
 }
 
 .content{
   color:#330000;
+  font-size: 16px;
+}
+
+p{
+  font-size: 16px;
 }
 
 }
@@ -40,7 +86,7 @@ h2::before {
 h2{
   border:0;
   background-color:#09f;
-  background-image: -webkit-linear-gradient(left,#cccccc,#999999,#fff);
+  background-image: -webkit-linear-gradient(left,#d0d0d0,#a9a9a9,#fff);
   height:24px;
 }
 .box {
@@ -94,7 +140,51 @@ h2{
      transform: translate(-44px,10px) skew(0deg) rotate(-45deg);
     }
 
-body{  background:url(http://subtlepatterns.com/patterns/paisley.png);
+body{  
+  background-image:url(http://subtlepatterns.com/patterns/paisley.png);
+  background-attachment: fixed;
 }
 
-
+ol.labels-list {
+  list-style-type: none;
+  list-style-type: decimal !ie; /*IE 7- hack*/
+  
+  margin: 0;
+  margin-left: 1em;
+  padding: 0;
+  
+  counter-reset: li-counter;
+}
+ol.labels-list > li{
+  position: relative;
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+  background-color: #eaeaea;
+    border: 3px solid;
+    width: 50%;
+    font-size: 16px;
+}
+ol.labels-list > li:before {
+  position: absolute;
+  top: -0.3em;
+  left: -0.5em;
+  width: 1.8em;
+  height: 1.2em;
+  
+  font-size: 2em;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+  color: #464646;
+  background-color: #d0d0d0;
+    border: 3px solid;
+  
+  transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  z-index: 99;
+  overflow: hidden;
+  
+  content: counter(li-counter);
+  counter-increment: li-counter;
+}

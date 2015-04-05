@@ -1,6 +1,9 @@
 ﻿body{     
 background:url(http://subtlepatterns.com/patterns/paisley.png);
-
+margin: 40px;
+width:50%
+border: #000 3px solid;
+background-color: rgba(255,255,255,.5);
 }
 .button{
 background: #eee;
